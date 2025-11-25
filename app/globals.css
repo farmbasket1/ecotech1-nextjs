@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities */
+:root{
+  --accent: #10b981;
+  --primary: #0f766e;
+  --muted: #64748b;
+}
+
+body {
+  @apply bg-gradient-to-b from-emerald-50 to-white text-slate-900 antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Small helper */
+.btn-primary {
+  @apply inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-indigo-700;
+}
+.card {
+  @apply bg-white rounded-2xl p-6 shadow-sm border;
+}
